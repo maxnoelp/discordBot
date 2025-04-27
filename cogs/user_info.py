@@ -8,7 +8,7 @@ class Userinfo(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(name="info")
     async def userinfo(self, ctx, member: discord.Member = None):
         # Falls kein User angegeben wird, nimm den Befehlssender selbst
         if member is None:

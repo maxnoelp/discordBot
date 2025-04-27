@@ -25,9 +25,9 @@ async def main():
     async with bot:
         await bot.load_extension("cogs.tempvc")
         await bot.load_extension("cogs.user_info")
-        await bot.start(
-            # token here
-        )
+        await bot.load_extension("cogs.rohan")
+        await bot.load_extension("cogs.banned")
+        await bot.start(TOKEN)
 
 
 asyncio.run(main())
