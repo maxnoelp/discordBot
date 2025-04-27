@@ -27,6 +27,7 @@ async def main():
         await bot.load_extension("cogs.user_info")
         await bot.load_extension("cogs.rohan")
         await bot.load_extension("cogs.banned")
+        await bot.load_extension("cogs.gondor")
         await bot.start(TOKEN)
 
 
