@@ -28,6 +28,8 @@ async def main():
         await bot.load_extension("cogs.rohan")
         await bot.load_extension("cogs.banned")
         await bot.load_extension("cogs.gondor")
+        await bot.load_extension("cogs.king_of_rohan")
+        await bot.load_extension("cogs.temp_voice_create")
         await bot.start(TOKEN)
 
 
