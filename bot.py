@@ -1,9 +1,11 @@
 import discord
 import os
 import asyncio
+from dotenv import load_dotenv
 from discord.ext import commands
 
-TOKEN = os.getenv.get("DISCORD_TOKEN")
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
 intents.guilds = True
